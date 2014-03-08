@@ -4,7 +4,7 @@ module.exports = function(BasePlugin) {
 
 	var Plugin = BasePlugin.extend({
 
-		name: 'easyshortcodes',
+		name: 'shortcodeparser',
 
 		config: {
 			codes: [],
