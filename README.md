@@ -7,7 +7,8 @@ Easy shortcodes for DocPad using [shortcode-parser](https://github.com/derdesign
 To add shortcodes, edit your docpad.js-file to include a custom configuration for shortcodeparser:
 
 ```
-module.exports = shortcodeparser: {
+module.exports = {
+	shortcodeparser: {
 		codes: [
 			// [img src="path.png" alt="text"] becomes <img src="path.png" alt="text" />
 			{
@@ -24,8 +25,9 @@ module.exports = shortcodeparser: {
 					return '<strong>' + buf + '</strong>';
 				}
 			}
-		}
 		]
 	}
 };
 ```
+
+Now you can use shortcodes, for example, in your markdown-documents by adjusting the file-extension to "document-name.html.md.sc". You can also set a custom file-extension in your docpad.js-file by using the parameter `extension`.
