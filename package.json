@@ -1,0 +1,26 @@
+{
+	"name": "docpad-plugin-shortcodeparser",
+	"version": "2.0.0",
+	"description": "Easy shortcodes for DocPad",
+	"license": {
+		"type": "MIT"
+	},
+	"author": {
+		"name": "Maximilian Schmitt",
+		"email": "maximilian.schmitt@googlemail.com",
+		"url": "http://maximilianschmitt.me"
+	},
+	"keywords": [
+		"docpad",
+		"docpad-plugin",
+		"shortcodes",
+		"shortcode-parser"
+	],
+	"peerDependencies": {
+		"docpad": "6"
+	},
+	"main": "./shortcodeparser.plugin.js",
+	"dependencies": {
+		"shortcode-parser": "0.0.1"
+	}
+}
