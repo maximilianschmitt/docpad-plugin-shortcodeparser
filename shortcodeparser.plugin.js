@@ -23,7 +23,7 @@ module.exports = function(BasePlugin) {
 		render: function(opts, next) {
 			if (opts.inExtension !== this.config.extension) return next();
 
-			opts.content = shortcode.parse(opts.content, opts.templateData.document);
+			opts.content = shortcode.parse(opts.content, opts.templateData);
 
 			return next();
 		}

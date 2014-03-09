@@ -15,7 +15,7 @@ module.exports = {
 			// [img src="path.png" alt="text"] becomes <img src="path.png" alt="text" />
 			{
 				tag: 'img',
-				cb: function(buf, opts, document) {
+				cb: function(buf, opts, templateData) {
 					return '<img src="' + opts.src + '" alt="' + opts.alt + '" />';
 				}
 			},
@@ -23,7 +23,7 @@ module.exports = {
 			// [b]Bold text![/b] becomes <strong>Bold text!</strong>
 			{
 				tag: 'b',
-				cb: function(buf, opts, document) {
+				cb: function(buf, opts, templateData) {
 					return '<strong>' + buf + '</strong>';
 				}
 			}

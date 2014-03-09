@@ -1,6 +1,6 @@
 {
 	"name": "docpad-plugin-shortcodeparser",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"description": "Easy shortcodes for DocPad",
 	"license": {
 		"type": "MIT"
